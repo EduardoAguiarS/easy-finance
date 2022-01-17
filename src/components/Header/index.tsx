@@ -10,9 +10,9 @@ export default function Header() {
 
   return (
     <header
-      className={`w-full px-4 xl:px-0 py-5 bg-blue/10 backdrop-blur-sm ${
+      className={`w-full px-4 xl:px-0 py-5 bg-blue/70 backdrop-blur-sm ${
         togleMenu === true ? "rounded-b-lg" : "rounded-none"
-      } shadow-sm`}
+      } shadow-sm fixed z-10`}
     >
       <nav className="flex items-center justify-between lg:container lg:mx-auto">
         {/* Logo */}
@@ -33,7 +33,10 @@ export default function Header() {
         </ul>
 
         {/* Mobile */}
-        <button className="lg:hidden text-blueDark" onClick={() => togleNav()}>
+        <button
+          className={`lg:hidden text-blueDark`}
+          onClick={() => togleNav()}
+        >
           <svg
             xmlns="http://www.w3.org/2000/svg"
             className="w-8 h-8 text-red"
