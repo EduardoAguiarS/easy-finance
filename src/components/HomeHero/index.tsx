@@ -3,6 +3,7 @@ import Image from "next/image";
 import HomeGif from "../../public/assets/home.gif";
 import Home from "../../pages";
 import Link from "next/link";
+import { ButtonDefault } from "../buttons";
 
 function HomeHero() {
   return (
@@ -13,18 +14,12 @@ function HomeHero() {
         <h1 className={`text-yellow text-4xl xl:text-6xl font-bold`}>
           Eduque seus clientes, sabedoria vale muito!
         </h1>
-        <p className={`text-white mt-8 font-light lg:text-lg`}>
+        <p className={`text-white my-8 font-light lg:text-lg`}>
           Transforme seus clientes em verdadeiros investidores, nosso objeto é
           mostrar que todos podem investir de forma inteligente, aumentando a
           rentabilidade de todos atraves do conhecimento.
         </p>
-        <Link href="/plans">
-          <button
-            className={`mt-8 bg-yellow uppercase text-white p-3 rounded transition hover:bg-orange`}
-          >
-            Veja os planos
-          </button>
-        </Link>
+        <ButtonDefault path={`/plans`} title={`Veja os planos`} />
       </div>
       <div className={`flex-1`}>
         <Image src={HomeGif} />

@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import Link from "next/link";
 import NavLink from "./NavLink";
+import { ButtonDefault } from "../buttons";
 
 export default function Header() {
   const [togleMenu, setTogleMenu] = useState(false);
@@ -30,13 +31,7 @@ export default function Header() {
           <NavLink title={`Planos`} path={`/plans`} />
           <NavLink title={`Serviços`} path={`/services`} />
           <NavLink title={`Contato`} path={`/contact`} />
-          <Link href="/plans">
-            <button
-              className={` bg-yellow uppercase text-white p-3 rounded transition hover:bg-orange`}
-            >
-              Começe Agora
-            </button>
-          </Link>
+          <ButtonDefault path={`/plans`} title={`Começe Agora`} />
         </ul>
 
         {/* Mobile */}
@@ -70,13 +65,7 @@ export default function Header() {
             <NavLink title={`Planos`} path={`/plans`} />
             <NavLink title={`Serviços`} path={`/services`} />
             <NavLink title={`Contato`} path={`/contact`} />
-            <Link href="/plans">
-              <button
-                className={`bg-yellow uppercase text-white p-3 rounded transition hover:bg-orange`}
-              >
-                Começe Agora
-              </button>
-            </Link>
+            <ButtonDefault path={`/plans`} title={`Começe Agora`} />
           </ul>
         )}
       </nav>
