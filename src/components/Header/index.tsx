@@ -10,7 +10,7 @@ export default function Header() {
 
   return (
     <header
-      className={`w-full px-4 xl:px-0 py-5 bg-blue/70 backdrop-blur-sm ${
+      className={`w-full px-4 xl:px-0 py-5 bg-blueDark/20 backdrop-blur-sm ${
         togleMenu === true ? "rounded-b-lg" : "rounded-none"
       } shadow-sm fixed z-10`}
     >
@@ -30,6 +30,13 @@ export default function Header() {
           <NavLink title={`Planos`} path={`/plans`} />
           <NavLink title={`Serviços`} path={`/services`} />
           <NavLink title={`Contato`} path={`/contact`} />
+          <Link href="/plans">
+            <button
+              className={` bg-yellow uppercase text-white p-3 rounded transition hover:bg-orange`}
+            >
+              Começe Agora
+            </button>
+          </Link>
         </ul>
 
         {/* Mobile */}
@@ -63,6 +70,13 @@ export default function Header() {
             <NavLink title={`Planos`} path={`/plans`} />
             <NavLink title={`Serviços`} path={`/services`} />
             <NavLink title={`Contato`} path={`/contact`} />
+            <Link href="/plans">
+              <button
+                className={`bg-yellow uppercase text-white p-3 rounded transition hover:bg-orange`}
+              >
+                Começe Agora
+              </button>
+            </Link>
           </ul>
         )}
       </nav>
