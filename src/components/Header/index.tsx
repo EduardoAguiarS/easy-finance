@@ -35,10 +35,7 @@ export default function Header() {
         </ul>
 
         {/* Mobile */}
-        <button
-          className={`lg:hidden text-blueDark`}
-          onClick={() => togleNav()}
-        >
+        <button className={`lg:hidden text-white`} onClick={() => togleNav()}>
           <svg
             xmlns="http://www.w3.org/2000/svg"
             className="w-8 h-8 text-red"
