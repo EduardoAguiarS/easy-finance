@@ -70,7 +70,7 @@ export default function Footer() {
         <span>
           ©2022 EasyFinance - Quase todos direitos reservados |{" "}
           <strong
-            className="cursor-pointer text-orange"
+            className="cursor-pointer"
             onClick={() =>
               openLinks("https://www.linkedin.com/in/eduardo-aguiar-s/")
             }
