@@ -1,7 +1,7 @@
 import React, { useState } from "react";
-import Link from "next/link";
 import NavLink from "./NavLink";
 import { ButtonDefault } from "../Misc/buttons";
+import { Logo } from "../Misc/logo";
 
 export default function Header() {
   const [togleMenu, setTogleMenu] = useState(false);
@@ -11,17 +11,13 @@ export default function Header() {
 
   return (
     <header
-      className={`w-full px-4 xl:px-0 py-5 bg-blueDark/20 backdrop-blur-sm ${
+      className={`w-full px-4 xl:px-0 py-5 bg-blueDark/30 backdrop-blur-sm ${
         togleMenu === true ? "rounded-b-lg" : "rounded-none"
       } shadow-sm fixed z-10`}
     >
       <nav className="flex items-center justify-between lg:container lg:mx-auto">
         {/* Logo */}
-        <Link href="/">
-          <a className={`text-white font-bold text-xl italic`}>
-            Easy<span className={`text-blueLight`}>Finance</span>
-          </a>
-        </Link>
+        <Logo />
 
         {/* Desktop */}
 

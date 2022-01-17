@@ -1,6 +1,7 @@
 import type { NextPage } from "next";
 // Components
 import Company from "../components/Companys";
+import Footer from "../components/Footer";
 import Header from "../components/Header";
 import HomeHero from "../components/HomeHero";
 import Services from "../components/Servicos";
@@ -13,8 +14,8 @@ const Home: NextPage = () => {
         <HomeHero />
         <Services />
         <Company />
-        <div className="h-screen bg-orange"></div>
       </main>
+      <Footer />
     </div>
   );
 };

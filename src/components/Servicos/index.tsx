@@ -41,7 +41,7 @@ export default function Services() {
           />
           <Cards
             title="Integração"
-            description="Integração direta com a plataforma da sua empresa, assim seus clientes pode encontrar tudo no mesmo ambiente."
+            description="Integração com a plataforma da sua empresa, assim seus clientes pode encontrar tudo no mesmo ambiente."
             image={Api}
             alt={`API Icone`}
           />
