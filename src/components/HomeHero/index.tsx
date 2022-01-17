@@ -8,7 +8,7 @@ function HomeHero() {
   return (
     <Container>
       <article
-        className={`md:pt-20 pt-28 pb-12 md:flex md:items-center flex-wrap text-center md:text-left`}
+        className={`md:pt-16 pt-16 md:flex md:items-center flex-wrap text-center md:text-left`}
       >
         <div className={`flex-1`}>
           <h1 className={`text-yellow text-4xl xl:text-6xl font-bold`}>
