@@ -1,12 +1,13 @@
-import Image from "next/image";
 import React from "react";
 import Container from "../Container";
 import { ButtonDefault } from "../Misc/buttons";
 import { Logo } from "../Misc/logo";
 import FooterSection from "./navbar";
-import Facebook from "../../public/social/facebook.svg";
-import Linkedin from "../../public/social/linkedin.svg";
-import Instagram from "../../public/social/instagram.svg";
+import {
+  AiOutlineFacebook,
+  AiOutlineInstagram,
+  AiOutlineLinkedin
+} from "react-icons/ai";
 
 export default function Footer() {
   function openLinks(url: string) {
@@ -32,31 +33,28 @@ export default function Footer() {
           </FooterSection>
           <FooterSection text={"Redes Sociais"}>
             <ul className="flex flex-wrap gap-4 mt-3 item-center">
-              <li className="block cursor-pointer e">
-                <Image
-                  src={Instagram}
-                  alt="Instagram"
-                  width={40}
-                  height={40}
-                  onClick={() => openLinks("https://www.instagram.com/")}
+              <li className="block cursor-pointer">
+                <AiOutlineFacebook
+                  size={40}
+                  onClick={() => openLinks("http://www.facebook.com")}
+                  className="text-white"
+                  title="facebook"
                 />
               </li>
               <li className="block cursor-pointer">
-                <Image
-                  src={Facebook}
-                  alt="Facebook"
-                  width={40}
-                  height={40}
-                  onClick={() => openLinks("https://www.facebook.com/")}
+                <AiOutlineInstagram
+                  size={40}
+                  onClick={() => openLinks("http://www.instagram.com")}
+                  className="text-white"
+                  title="instagram"
                 />
               </li>
               <li className="block cursor-pointer">
-                <Image
-                  src={Linkedin}
-                  alt="Linkedin"
-                  width={40}
-                  height={40}
-                  onClick={() => openLinks("https://www.linkedin.com/")}
+                <AiOutlineLinkedin
+                  size={40}
+                  onClick={() => openLinks("http://www.linkedin.com")}
+                  className="text-white"
+                  title="linkedin"
                 />
               </li>
             </ul>
