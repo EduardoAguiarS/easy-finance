@@ -13,14 +13,14 @@ function HomeHero() {
         <h1 className={`text-yellow text-4xl xl:text-6xl font-bold`}>
           Eduque seus clientes, sabedoria vale muito!
         </h1>
-        <p className={`text-blueDark mt-8 font-light lg:text-lg`}>
+        <p className={`text-white mt-8 font-light lg:text-lg`}>
           Transforme seus clientes em verdadeiros investidores, nosso objeto é
           mostrar que todos podem investir de forma inteligente, aumentando a
           rentabilidade de todos atraves do conhecimento.
         </p>
         <Link href="/plans">
           <button
-            className={`mt-8 bg-yellow uppercase lg:text-lg text-white p-3 rounded`}
+            className={`mt-8 bg-yellow uppercase text-white p-3 rounded transition hover:bg-orange`}
           >
             Veja os planos
           </button>
