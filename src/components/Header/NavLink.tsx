@@ -13,8 +13,8 @@ export default function NavLink({ title, path }: Props) {
   return (
     <Link href={path}>
       <a
-        className={`${isActive ? "text-blueLight" : "text-blueDark"} ${
-          isActive ? "hover:text-blueDark" : "hover:text-blueLight"
+        className={`${isActive ? "text-blueLight" : "text-white"} ${
+          isActive ? "hover:text-white" : "hover:text-blueLight"
         } transition uppercase font-light p-4`}
       >
         {title}

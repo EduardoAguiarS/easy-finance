@@ -17,7 +17,7 @@ export default function Header() {
       <nav className="flex items-center justify-between lg:container lg:mx-auto">
         {/* Logo */}
         <Link href="/">
-          <a className={`text-blueDark font-bold text-xl italic`}>
+          <a className={`text-white font-bold text-xl italic`}>
             Easy<span className={`text-blueLight`}>Finance</span>
           </a>
         </Link>
