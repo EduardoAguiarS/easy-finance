@@ -63,14 +63,22 @@ export default function Footer() {
           </FooterSection>
           <FooterSection text={"Endereço"}>
             <span className="mt-3 text-white">
-              Rua São Paulo, 999, Jardim Sumaré ,São Paulo - SP
+              Rua São Paulo, 999, Jardim Sumaré, São Paulo - SP
             </span>
           </FooterSection>
         </nav>
       </Container>
-      <div className="py-3 text-center bg-yellow">
+      <div className="py-3 text-center text-white bg-yellow">
         <span>
-          ©2022 EasyFinance - Quase todos direitos reservados | Eduardo Aguiar
+          ©2022 EasyFinance - Quase todos direitos reservados |{" "}
+          <strong
+            className="cursor-pointer text-orange"
+            onClick={() =>
+              openLinks("https://www.linkedin.com/in/eduardo-aguiar-s/")
+            }
+          >
+            Eduardo Aguiar
+          </strong>
         </span>
       </div>
     </div>
