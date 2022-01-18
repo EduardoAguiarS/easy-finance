@@ -19,10 +19,10 @@ export default function Blog() {
           data-aos="fade-down"
           data-aos-duration="700"
         >
-          <Card title={"Title"} description={"Description"} path={"/blog"} />
-          <Card title={"Title"} description={"Description"} path={"/blog"} />
-          <Card title={"Title"} description={"Description"} path={"/blog"} />
-          <Card title={"Title"} description={"Description"} path={"/blog"} />
+          <Card title={"Title"} description={"Description"} slug={"teste"} />
+          <Card title={"Title"} description={"Description"} slug={"teste"} />
+          <Card title={"Title"} description={"Description"} slug={"teste"} />
+          <Card title={"Title"} description={"Description"} slug={"teste"} />
         </div>
         <div
           className="mt-10 text-center"
