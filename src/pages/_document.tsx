@@ -12,6 +12,7 @@ export default class MyDocument extends Document {
     return (
       <Html lang="pt-br">
         <Head>
+          <title>EasyFinance | Investir nunca foi tão facil</title>
           <link rel="preconnect" href="https://fonts.googleapis.com" />
           <link rel="preconnect" href="https://fonts.gstatic.com" />
           <link
