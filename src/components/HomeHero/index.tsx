@@ -17,7 +17,7 @@ function HomeHero() {
           <p className={`text-white my-8 font-light lg:text-lg`}>
             Transforme seus clientes em verdadeiros investidores, nosso objeto é
             mostrar que todos podem investir de forma inteligente, aumentando a
-            rentabilidade de todos atraves do conhecimento.
+            rentabilidade de todos através do conhecimento.
           </p>
           <ButtonDefault path={`/plans`} title={`Veja os planos`} />
         </div>

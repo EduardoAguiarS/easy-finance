@@ -28,7 +28,7 @@ export default function Services() {
           <div>
             <Cards
               title="Cursos"
-              description="Diversos cursos sobre, investimentos, controle financeiro, criptomoedas, bolsa de valores e muito mais."
+              description="Diversos cursos sobre investimentos, controle financeiro, criptomoedas, bolsa de valores e muito mais."
               image={Brain}
               alt={`Mente`}
             />
