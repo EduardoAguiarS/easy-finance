@@ -1,25 +1,25 @@
-import type { NextPage } from "next";
-import Blog from "../components/Blog";
 // Components
 import Company from "../components/Companys";
 import Footer from "../components/Footer";
 import Header from "../components/Header";
 import HomeHero from "../components/HomeHero";
 import Services from "../components/Servicos";
+import Head from "next/head";
 
-const Home: NextPage = () => {
+export default function Home() {
   return (
     <div className={`bg-blue h-full`}>
+      <Head>
+        <title>EasyFinance | Investir nunca foi tão facil</title>
+        <link rel="shortcut icon" href="../public/favicon.ico" />
+      </Head>
       <Header />
       <main>
         <HomeHero />
         <Services />
         <Company />
-        <Blog />
       </main>
       <Footer />
     </div>
   );
-};
-
-export default Home;
+}
