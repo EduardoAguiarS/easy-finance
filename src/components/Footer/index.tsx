@@ -15,7 +15,7 @@ export default function Footer() {
   }
 
   return (
-    <div>
+    <div className="bg-blueDark">
       <Container>
         <nav className="flex flex-col justify-between gap-3 md:flex-row item-start">
           <div>
