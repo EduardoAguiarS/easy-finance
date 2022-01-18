@@ -11,7 +11,6 @@ export default function Home() {
     <div className={`bg-blue h-full`}>
       <Head>
         <title>EasyFinance | Investir nunca foi tão facil</title>
-        <link rel="icon" href="../public/logo.png" type="image/png" />
       </Head>
       <Header />
       <main>
