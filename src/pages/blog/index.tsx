@@ -11,13 +11,25 @@ export default function BlogPage() {
         <Container>
           <section className="w-full">
             <div className="mb-10 ">
-              <BlogItem title={"Titulo"} description={"Descrição"} path={"/"} />
+              <BlogItem
+                title={"Titulo"}
+                description={"Descrição"}
+                slug={"teste"}
+              />
             </div>
             <div className="mb-10 ">
-              <BlogItem title={"Titulo"} description={"Descrição"} path={"/"} />
+              <BlogItem
+                title={"Titulo"}
+                description={"Descrição"}
+                slug={"teste"}
+              />
             </div>
             <div className="mb-10 ">
-              <BlogItem title={"Titulo"} description={"Descrição"} path={"/"} />
+              <BlogItem
+                title={"Titulo"}
+                description={"Descrição"}
+                slug={"teste"}
+              />
             </div>
           </section>
         </Container>
